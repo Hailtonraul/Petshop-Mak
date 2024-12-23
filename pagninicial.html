@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    
+    <title>Página Inicial</title>
+    <style>
+        body {
+            background-color: #e0f7fa;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            color: #000000;
+        }
+
+        #conteudo {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ffffff;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            padding: 10px 15px;
+            font-size: 12px;
+            background: #28a745;
+            color: white;
+            height: 5;
+            margin:10px;
+            border:lab(from color l a b);
+            cursor:pointer;
+            border-radius: 10px;
+        }
+
+        button:hover {
+            background: #green;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 6px;
+            padding: 0;
+            background-color: #2e7d32; 
+            border-radius: 14px;
+        }
+
+        li {
+            display: inline;
+        }
+
+        li a {
+            display: inline-block;
+            color: #ffffff; 
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: justify;
+            margin: 10px 0;
+        }
+
+ img {
+            width:300 ; 
+            height: 250; 
+            margin:8px; 
+            border-radius: 12px
+        }
+
+    </style>
+</head>
+<body>
+    <button id="menuToggle">☰ </button>
+    <ul id="menu" style="display: none;">
+        <li><a href="Introdução.html">Introdução </a></li>
+        <li><a href="Sobre.html">Sobre</a></li>
+        <li><a href="Contato.html">Contato</a></li>
+    </ul>
+
+    <h1>Bem-vindo à nossa página!</h1>
+    <p>Aqui, você encontrará informações sobre as diferentes espécies que habitam nosso planeta, divididas entre animais selvagens e domésticos. Cada um deles possui características únicas e desempenha um papel vital em nossos ecossistemas e na vida humana.</p>
+
+    <div align="center">
+        <img src="fund.jpg" alt="Foto de animais domésticos" width="300" height="150">
+    </div>
+
+    <p>Através desta página, esperamos despertar seu interesse e respeito por todas as formas de vida. Animais selvagens e domésticos são essenciais para a nossa existência e bem-estar. Junte-se a nós nesta jornada para aprender mais sobre esses incríveis seres vivos!</p>
+
+    <h2>Navegue pelo nosso conteúdo!!!</h2>
+
+    <p>Explore as seções específicas para saber mais sobre cada grupo de animais, suas características e a importância de protegê-los. A natureza é rica e diversificada, e cada espécie tem uma história a contar!</p>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const menu = document.getElementById('menu');
+
+        menuToggle.addEventListener('click', () => {
+            if (menu.style.display === 'none' || menu.style.display === '') {
+                menu.style.display = 'block';
+            } else {
+                menu.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
